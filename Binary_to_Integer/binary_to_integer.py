@@ -1,7 +1,10 @@
 
 def binary_array_to_number(arr):
-    
-    return True
+    result = 0
+    for i in range(len(arr)):
+        if arr[i] == 1:
+            result += pow(2,len(arr) - (i + 1))
+    return result
 
 testCase = [
     [0, 0, 0, 1],
